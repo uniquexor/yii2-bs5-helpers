@@ -13,7 +13,7 @@
      * ```
      * ...or use {@see BootstrapIconsAssets}
      */
-    class Bs4ActionColumn extends \yii\grid\ActionColumn {
+    class Bs5ActionColumn extends \yii\grid\ActionColumn {
 
         /**
          * @var bool If set to true, buttons will be generated, otherwise simple links with icons for text.
