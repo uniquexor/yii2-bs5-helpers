@@ -2,7 +2,7 @@
     namespace unique\yii2bs5helpers\components;
 
     use Yii;
-    use yii\bootstrap4\Html;
+    use yii\bootstrap5\Html;
     use yii\helpers\Url;
 
     /**
