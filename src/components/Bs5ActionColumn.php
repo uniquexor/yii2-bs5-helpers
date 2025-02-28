@@ -64,14 +64,18 @@
          */
         public array $additional_buttons = [];
 
+        public string $default_view_icon = 'eye-fill';
+        public string $default_update_icon = 'pencil-fill';
+        public string $default_delete_icon = 'trash-fill';
+
         /**
          * @inheritdoc
          */
         protected function initDefaultButtons() {
 
-            $this->initDefaultButton( 'view', 'eye-fill' );
-            $this->initDefaultButton( 'update', 'pencil-fill' );
-            $this->initDefaultButton( 'delete', 'trash-fill', [
+            $this->initDefaultButton( 'view', $this->default_view_icon );
+            $this->initDefaultButton( 'update', $this->default_update_icon );
+            $this->initDefaultButton( 'delete', $this->default_delete_icon, [
                 'data-confirm' => Yii::t( 'yii', 'Are you sure you want to delete this item?' ),
                 'data-method' => 'post',
             ] );
